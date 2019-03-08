@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+}
+.container{    
+    margin: auto;
+    width: 1000px;    
+
+}
+.container-flex {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+body {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/*+---------estilos del HEADER------------*/
+.nav-bar{
+    background: #333;
+    height: 98px;
+    
+
+}
+.nav-bar .container{
+    padding-top: 15px;
+}
+.logo-imagen {
+    border-radius: 50%;
+    background: #2CB2DE;    
+    margin-right: 10px;
+    font-size: 30px;
+    padding: 15px;        
+        
+}
+.logo {
+    color: white;
+    text-decoration: none;
+    
+}
+.lista-menu {
+    list-style-type: none;
+    display: flex; 
+    padding-top: 10px;
+    
+    
+}
+.opcion-menu {    
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    font-size: 12px;
+}
+.opcion-menu:hover{
+    color: #197492;
+    font-size: 20px;
+}
+/*------Estilos del banner-------------*/
+.banner {
+    width: 100%;
+    margin-top: 20px;    
+    
+    
+}
+.banner .container{
+    overflow: hidden;
+}
+.banner ul {    
+    display: flex;
+    padding: 0;    
+    
+   animation: cambio 20s infinite alternate;
+}
+.banner li {
+    width: 100%;
+    list-style: none;
+}
+
+.banner img {   
+    width: 1000px;
+    max-height: 500px;    
+    object-fit: cover; 
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+
+/*---------Estilo de Seccion-------------*/
+.info .container{
+    align-content: flex-start;
+    
+}
+.column-33{
+    margin-top: 20px;
+    width: 32%;
+    height: 350px;
+}
+.title-info {
+    border: 1px solid #1195C1;
+    background: #1195C1;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+}
+.contenido {
+    padding: 0 8px 0 8px;
+    color: darkgrey;
+    margin: 22px;
+    
+}
+.link-salto {
+    border: 1px solid #1195C1;
+    border-radius: 2%;
+    background: #1195C1;
+    color: white;
+    font-weight: bold;
+    padding:8px 25px 8px 25px;    
+    text-decoration: none;
+}
+.contacto {
+    background: #333;
+    color: white;
+    padding-left: 10px;
+    
+}
+.title-contacto{
+    padding: 15px;
+}
+.contacto .contenido {
+    margin: 0;
+    padding-right: 30px;
+}
+.contacto-redes, .contacto-phone, .contacto-correo {
+    padding-left: 10px
+}
+.contacto-phone {
+    word-spacing: 10px;
+    
+}
+.contacto-datos {
+    padding-left: 15px;
+}
+.contacto [class*="icon-"]:before {
+    position: relative;
+    top: 1px;
+    right: 5px;
+}
+.social-icon__link {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding-left: 20px;
+}
+/*-------------Estilos Noticia-------------*/
+.noticia{
+    margin-top: 30px;
+   
+}
+.noticia .container{
+    display: flex;    
+    align-items: flex-start;
+    
+    
+}
+.column-66{
+    width: 66%;    
+}
+.title-noticia{
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.column{
+    display: flex;
+    margin-bottom: 30px;
+}
+.imagen-noticia{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.fecha-noticia{
+    margin-left: 20px;
+    font-size: 0.8em;
+    color: darkgrey;
+}
+.enlace-noticia{    
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1195C1;    
+}
+
+/*--*/
+.noticia .container .column-33{
+    margin-top: 0;   
+    
+    
+}
+.title-area{
+    background: #1195C1;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;    
+}
+.nombre-area {
+    list-style-type: none;
+    padding-left: 15px;
+}
+.link-area {
+    text-decoration: none;
+    color: #1195C1;
+    font-size: 20px;
+    padding-left: 0;
+    margin: 0;
+    
+}
+/*---------Estilos footer-----------*/
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+.link-creador{
+    text-decoration: none;
+    color: #abc;
+    
+}
+
+/*************-----EQUIPO.HTML-------------------***/
+/*--------Estilos titulo---------------*/
+.title-equipo {
+    color: #444;
+    font-size: 40px;
+    margin-bottom: 30px;
+    
+    
+}
+.equipo{
+    margin-bottom: 50px;
+}
+.equipo-personal{
+    width: 1000px;
+    
+    
+}
+
+.column-32 {
+    width: 30%;
+    
+}
+.equipo-imagen{
+    width: 320px;
+    height: 360px;
+    object-fit: cover;
+    margin: 4px;
+}
+.equipo-nombre {
+    color: #444;
+    margin-top: 20px;
+}
+
+/*************-----SERVICIOS.HTML-------------------***/
+/*--------Estilos ---------------*/
+.servicios .column-33 {
+    width: 31.5%;
+    margin: 8px;
+}
+.title-servicios {
+    color: #333;
+    margin-top: 30px;
+    font-size: 35px;
+}
+.title-contenido{
+    color: #333;
+    width: 600px;
+    font-size: 1.2em;
+}
+.gris {
+    background: #333;
+}
+.servicios .container-flex {
+    justify-content: flex-end;
+}
+.btn-contacto{
+    margin-bottom: 30px;
+    background: #1195C1;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;   
+            
+}
+
+/*************-----CONTACTO.HTML-------------------***/
+/*--------Estilos ---------------*/
+.contacto-pagina{
+    margin-bottom: 30px;
+}
+.title-contacto {
+    padding-left: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+.contacto-direccion {
+    width: 59%;
+    
+}
+.title-direccion {
+    background: #1195C1;   
+    padding:15px;
+    color: white;
+    margin-bottom: 30px;
+}
+.info-contacto {
+    color: #333;
+    padding-left: 20px;
+    margin: 0;
+}
+.title-telefono {
+    background: #333;
+     padding: 15px;
+    color: white;
+}
+.contacto-telefono {
+    width: 39%;
+  
+    
+}
+.info-telefono {
+    color: #444;
+    padding-left: 30px;
+}
+.contacto-pagina .container-flex {    
+    align-items: flex-start;
+}
+
+.contacto-mapa {
+    margin: 30px 0 30px 0;
+    width: 59%;
+}
+.contacto-formulario {
+    margin: 30px 0 30px 0;
+    width: 38%;
+    
+}
+.contacto-input {
+    margin-bottom: 10px;
+    width: 98%;
+    border: none;
+    background: #ddd;
+    padding: 10px;
+}
+.boton-enviar {
+    color: white;
+    background: #1195C1;
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+    font-size: 1.2em;
+    
+    
+}
+.boton-enviar-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
